@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/employees/tree', 'EmployeeController@tree')->name('employees.tree');
+
+Route::get('/catalogs/{type}', 'CatalogController@index')->name('catalogs.index');
